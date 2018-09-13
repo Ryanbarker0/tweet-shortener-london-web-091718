@@ -14,7 +14,14 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet_ary = tweet.split(", ")
-  tweet_ary.each do |x|
-    if tweet_ary.include?(dictionary)
-      tweet_ary.gsub(x, dictionary)
+  tweet_ary = Array.new
+  tweet.split.map do |x|
+    if dictionary.keys.include?(x.downcase)
+      tweet_ary << x
+    end
+  else
+    tweet_ary << x
+  end
+end
+tweet_ary.join(" ")
+end

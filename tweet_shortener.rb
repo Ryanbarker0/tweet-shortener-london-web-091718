@@ -1,3 +1,5 @@
+require 'pry'
+
 def dictionary
   words_to_be_substituted = {
     hello: "hi",
@@ -10,3 +12,6 @@ def dictionary
     and: "&"
   }
 end
+
+def word_substituter(tweet)
+  

@@ -1,5 +1,5 @@
 def dictionary
-  words_to_be_substituted => {
+  words_to_be_substituted = {
     hello: "hi",
     to: "2",
     two: "2",
@@ -10,4 +10,3 @@ def dictionary
     and: "&"
   }
 end
-  

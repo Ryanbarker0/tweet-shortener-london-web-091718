@@ -18,10 +18,9 @@ def word_substituter(tweet)
   tweet.split.map do |x|
     if dictionary.keys.include?(x.downcase)
       tweet_ary << x
-    end
-  else
+    else
     tweet_ary << x
+    end
   end
-end
 tweet_ary.join(" ")
 end

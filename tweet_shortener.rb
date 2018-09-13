@@ -12,7 +12,7 @@ def dictionary
     "and" => "&"
     "four" => "4",
     "for" => "4"
-    
+
   }
 end
 
